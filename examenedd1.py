@@ -34,8 +34,10 @@ def kms(itinerario):
 		for c in range(0,len(ciudades)):
 		    if ciudades[c] == itinerario[t]:
 		        c1 = c
+                print ('es igual c1')
 		    if ciudades[c] == itinerario[t+1]:
 		        c2 = c
+				print('es igual c2')
 		d = d + distancias[c1][c2]
 		print (ciudades[c1], '-', ciudades[c2], distancias[c1][c2])
 	print('La distancia total es: ', d)
